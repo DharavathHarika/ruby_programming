@@ -1,0 +1,32 @@
+--- !ruby/object:Company
+name: harika
+employees:
+- !ruby/object:Employee
+  name: John Doe
+  email: jdoe@gmail.edu
+  phone: 555-1122
+  salary: 20000.0
+- !ruby/object:Employee
+  name: Jane Doe
+  email: jane@cs.edu
+  phone: 555-2233
+  salary: 35000.0
+customers:
+- !ruby/object:Customer
+  name: Albert Customer
+  email: acustomer@gmail.com
+  phone: 555-4455
+  purchases:
+  - !ruby/object:Purchase
+    item: Widget 1
+    quantity: '12'
+    cost: 10.0
+  - !ruby/object:Purchase
+    item: Widget 2
+    quantity: '20'
+    cost: 5.0
+- !ruby/object:Customer
+  name: Bill Customer
+  email: bcustomer@gmail.com
+  phone: 555-6677
+  purchases: []
