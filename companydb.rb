@@ -5,7 +5,7 @@ require_relative 'person'
 require_relative 'purchase'
 
 
-class Company
+class Companydb
   attr_accessor :name, :employees, :customers
 
   def initialize(name)
@@ -97,10 +97,10 @@ class Company
       data = File.readlines(file_path)
       # data = YAML.load(data)
       company= readData(data,company_name)
-      # Company.new(company_name)
+      # Companydb.new(company_name)
       company
     else
-      Company.new(company_name)
+      Companydb.new(company_name)
     end
   end
 end
@@ -113,7 +113,7 @@ end
 
 def readData(data,company_name)
 
-  company  = Company.new(company_name)
+  company  = Companydb.new(company_name)
   no_of_employees = data[0].to_i
   j=0
   index=0
@@ -150,7 +150,7 @@ def readData(data,company_name)
 end
 
 company_name = prompt('Enter the name of the company: ')
-company = Company.load_data(company_name)
+company = Companydb.load_data(company_name)
 
 
 

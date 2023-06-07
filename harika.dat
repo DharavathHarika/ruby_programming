@@ -1,4 +1,4 @@
---- !ruby/object:Company
+--- !ruby/object:Companydb
 name: harika
 employees:
 - !ruby/object:Employee
